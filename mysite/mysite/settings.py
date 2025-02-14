@@ -30,7 +30,9 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+
 INSTALLED_APPS = [
+    'daphne',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,8 +45,10 @@ INSTALLED_APPS = [
     'Session_app',
     'JWT_app',
     'Signal_app',
+    'Channels_app',
 
     'rest_framework',
+    
 ]
 
 MIDDLEWARE = [
@@ -75,7 +79,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'mysite.wsgi.application'
+ASGI_APPLICATION = "mysite.asgi.application"
+
 
 
 # Database

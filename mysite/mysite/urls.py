@@ -24,4 +24,5 @@ urlpatterns = [
     path('s/',include('Session_app.urls')),
     path('jwt/',include('JWT_app.urls')),
     path('signal/',include('Signal_app.urls')),
+    path('channel/', include('Channels_app.urls')),
 ]
